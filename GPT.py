@@ -1,20 +1,20 @@
 from docx import Document
 from openai import OpenAI
 from transcribe import Transcript
-import config 
+import Config 
 
 Trans = Transcript()
 file = Transcript.transcription()
 # file = open('Transcript.txt','r')
 
 client = OpenAI(
-  organization=config.organization,
-  project=config.project,
-  api_key=config.gpt_api_key
+  organization=Config.organization,
+  project=Config.project,
+  api_key=Config.gpt_api_key
 )
 
 completion = client.chat.completions.create(
-    model="chatgpt-4o-latest",
+    model="gpt-4o-mini",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {

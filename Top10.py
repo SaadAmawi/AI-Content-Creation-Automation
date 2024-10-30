@@ -1,13 +1,13 @@
 from googleapiclient.discovery import build 
 from datetime import datetime, timedelta  
 import isodate  
-import config
+import Config
 
 class Top10:
 
 
 
-    API_KEY = config.YT_API_KEY
+    API_KEY = Config.YT_API_KEY
 
 
     @staticmethod
@@ -21,7 +21,7 @@ class Top10:
     @staticmethod
     def get_top_gaming_videos():
     
-        youtube = build('youtube', 'v3', developerKey=config.YT_API_KEY)  
+        youtube = build('youtube', 'v3', developerKey=Config.YT_API_KEY)  
 
         one_week_ago = (datetime.utcnow() - timedelta(days=7)).isoformat() + 'Z'  
 
