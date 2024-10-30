@@ -20,35 +20,44 @@ completion = client.chat.completions.create(
         {
             "role": "user",  
             "content": 
-            f"""I have gone and found the top 10 most popular YouTube videos under the EA FC game genre in the past week.
-                            I will now give you the transcripts of the top 10 videos, and I want you to do the following:
-                            -understand the context from the transcript
-                            -create a summary for each video
-                            -create a summary of the top 10 videos of the week, explaining common themes and things we can incorporate into our ideas for content creation this week
-                            -include any other information you think might be useful or that might give us insight
-                            -put this all into a brief that will be sent to our content creation director for him to use for the content creation this week.
+            f"""
+            1. Project Title:
 
-                            This is the format of the brief:
+A concise and catchy title summarizing the video concept (e.g., "Top 10 EA FC Tips for 2025" or "Behind-the-Scenes with NASR's Pro Gamers").
+2. Video Objective:
 
-                            GAME TITLE
+The main goal of this video (e.g., "Engage gaming enthusiasts by sharing pro tips on new EA FC strategies," or "Highlight the personality and gaming skills of NASR players").
+3. Target Audience:
 
-                            Video Title - View Count - Channel Name - Channel Subscriber Amount
-                            Transcript 1 : [transcripts can be found at the bottom of this document]
-                            Video Summary
+Describe the intended viewers (e.g., "Dedicated EA FC fans looking to improve their gameplay" or "Esports enthusiasts interested in NASR's team culture").
+4. Video Structure:
 
-                            Video Title - View Count - Channel Name - Channel Subscriber Amount
-                            Transcript 2: [transcripts can be found at the bottom of this document]
-                            Video Summary detailing what the video was about, what kind of methods the content creator used to increase audience retention,
-                            and other things that may be useful to know about the contents of the video (ENSURE THIS SUMMARY IS A SHORT PARAGRAPH OF AROUND 300-400 WORDS) 
-                            .
-                            .
-                            .
-                            Transcript 10.
+Intro (10-15 seconds): Briefly introduce the concept or hook to grab attention.
+Main Content: List the primary points or segments the video should cover (e.g., top 10 tips, reactions, gameplay analysis, behind-the-scenes).
+Outro: Include a call-to-action (subscribe, follow on social, leave a comment with tips/questions).
+5. Tone & Style:
 
-                            1. LONGER Summary of all the videos and any common themes, common strategies used to increase audience
-                            2. key findings
+Outline the expected tone (e.g., "Informative but friendly" or "Energetic and engaging with humor").
+Style recommendations (e.g., "High-energy, concise cuts, on-screen graphics for gameplay tips").
+6. Key Elements to Include:
 
-                            3. Any other relevant information that our content creation director (Darshan) might find useful
+Any specific NASR content, terms, or player insights to mention.
+B-roll suggestions (e.g., clips of past tournaments, reaction shots, or fan interactions if available).
+Suggested questions or prompts if interviewing NASR players or fans.
+7. Technical Specifications:
+
+Video length, format requirements, and resolution.
+Soundtrack guidelines or any sound effects that fit the brand style.
+8. Call to Action:
+
+Encourage viewers to engage (e.g., "Ask viewers to share their favorite EA FC tactics in the comments").
+9. Timeline & Deadlines:
+
+Key deadlines (script approval, filming, editing, final video submission).
+Any extra notes on urgent release dates or campaign tie-ins.
+10. Points of Contact:
+
+List contacts for questions, feedback, or assistance with editing resources.
 
                             below are the transcripts of the videos:
                             {file.read()}
