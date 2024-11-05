@@ -25,7 +25,7 @@ class Top10:
 
         one_week_ago = (datetime.utcnow() - timedelta(days=7)).isoformat() + 'Z'  
 
-        keywords = ['Black Ops 6']  
+        keywords = ['EA FC']  
 
         counter = 0
 

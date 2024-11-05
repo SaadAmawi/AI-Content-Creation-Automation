@@ -19,7 +19,7 @@ class Transcript:
                 transcript = YouTubeTranscriptApi.get_transcript(id)
                 for entry in transcript:
                     file.write(f"{entry['text']} ")
-                    print(f"{entry['text']} ")
+                    # print(f"{entry['text']} ")
             except Exception as e:
                 file.write("No Transcript Available")
                 print("Error fetching transcript:", e)
